@@ -1,2 +1,1 @@
-A zkGraph for bridging a token between sepolia and goerli. 
-Requires the creator of the ERC20 to have the mint permission.
+a zkGraph to track the state of a governance proposal, supports oppenzeppelin's governor contracts. 
