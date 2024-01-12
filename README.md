@@ -1,1 +1,1 @@
-a zkGraph to track the state of a governance proposal, supports oppenzeppelin's governor contracts. 
+A zkGraph to track historical pool created events for the uniswap V3 Factory pool.

@@ -5,14 +5,11 @@ description: "This demo zkGraph shows 3 ways to access / filter out source event
 repository: https://github.com/hyperoracle/zkgraph
 dataSources:
   - kind: ethereum
-    network: sepolia
+    network: goerli
     event:
-      - address: "0x958b482c4E9479a600bFFfDDfe94D974951Ca3c7"
+      - address: "0x1F98431c8aD98523631AE4a59f267346ea31F984"
         events:
-          - "ProposalCreated(uint256,address,address[],uint256[],string[],bytes[],uint256,uint256,string)"
-          - "ProposalQueued(uint256,uint256)"
-          - "ProposalCanceled(uint256)"
-          - "ProposalExecuted(uint256)"
+          - "PoolCreated(address,address,uint24,int24,address)"
 mapping:
   language: wasm/assemblyscript
   file: ./mapping.ts
@@ -20,5 +17,5 @@ mapping:
 
 dataDestinations:
   - kind: ethereum
-    network: sepolia
+    network: goerli
     address: "0x0000000000000000000000000000000000000001"
